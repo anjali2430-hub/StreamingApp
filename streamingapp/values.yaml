@@ -1,0 +1,36 @@
+dockerUser: anjali2430
+
+services:
+  auth:
+    image: anjali2430/streaming-auth
+    tag: "1.0.0"
+    replicas: 2
+    port: 3001
+  streaming:
+    image: anjali2430/streaming-stream
+    tag: "1.0.0"
+    replicas: 2
+    port: 3002
+  admin:
+    image: anjali2430/streaming-admin
+    tag: "1.0.0"
+    replicas: 1
+    port: 3003
+  chat:
+    image: anjali2430/streaming-chat
+    tag: "1.0.0"
+    replicas: 1
+    port: 3004
+  frontend:
+    image: anjali2430/streaming-frontend
+    tag: "1.0.0"
+    replicas: 2
+    port: 80
+
+mongo:
+  storageSize: 5Gi
+
+ingress:
+  host: streamingapp.local
+
+jwtSecret: supersecretkey123

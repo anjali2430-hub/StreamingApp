@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: streamingapp-config
+data:
+  MONGO_URI: "mongodb://mongo:27017/streamingapp"
+  CLIENT_URLS: "http://{{ .Values.ingress.host }}"
+  AWS_REGION: "ap-south-1"
+  STREAMING_PUBLIC_URL: "http://{{ .Values.ingress.host }}/api/streaming"
