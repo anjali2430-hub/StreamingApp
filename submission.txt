@@ -1,0 +1,9 @@
+StreamingApp - Container Orchestration Assignment
+GitHub Repository: https://github.com/anjali2430-hub/StreamingApp
+
+Docker Hub Images:
+- anjali2430/streaming-auth:1.0.0
+- anjali2430/streaming-stream:1.0.0
+- anjali2430/streaming-admin:1.0.0
+- anjali2430/streaming-chat:1.0.0
+- anjali2430/streaming-frontend:1.0.0
